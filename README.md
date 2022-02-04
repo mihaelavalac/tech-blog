@@ -1,9 +1,9 @@
-  <h1 align="center"> Tech Blog <img align="center" src="https://img.shields.io/badge/license-GPL 2.0-blue> </h1> <br>
+  <h1 align="center"> Tech Blog <img align="center" src="https://img.shields.io/badge/license-GPL-2.0-blue> </h1> <br>
 
 ## Description
 
-  You can see the project repository <b>[here](https://github.com/mihaelavalac/tech-blog) .</b><br>
-  You can navigate to the deployed site <b>[here](https://tech-blog-mv.herokuapp.com/) .</b>
+  You can see the project repository <b> [here](https://github.com/mihaelavalac/tech-blog) .</b></br>
+  You can navigate to the deployed site <b> [here](https://tech-blog-mv.herokuapp.com/) .</b> </br>
 
   <p><i>The purpose of this application is to allow developers to create an account and share different blog posts with others developers. After creating an account, an user can create a blog post by adding the title and the content of the post. As well, an user can edit or delete his/her blog or upvote and comment others blogs.</i></p><br>
 
