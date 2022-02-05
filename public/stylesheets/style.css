@@ -57,6 +57,18 @@ textarea {
   min-width: 40%;
   min-height: 100px;
 }
+.login-form {
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+.signup-form {
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
 
 form > div {
   margin-bottom: 2%;
@@ -180,3 +192,4 @@ footer {
   padding: 1%;
   font-size: 110%;
 }
+
