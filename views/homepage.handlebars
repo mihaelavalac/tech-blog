@@ -1,0 +1,23 @@
+<ul class="post-list list-unstyled">
+  {{#each posts as |post|}}
+  <li>
+    <article class="post p-2 bg-dark">
+      <div class="row">
+
+          <div class ="col-6 ">
+            <h4 class="text-left">
+            <a class="title" href="api/posts/{{id}}">{{post.title}}</a>
+            </h4>
+          </div>
+          <div class="meta col-6">
+            <p class="text-white text-right small">Posted by {{post.user.username}} on
+            {{post.created_at}}</p>
+          </div>
+          <div class="col-12">
+            <p class = "post-body ">{{post.post_body}}</p>
+          </div>
+      </div>
+    </article>
+  </li>
+  {{/each}}
+</ol>
