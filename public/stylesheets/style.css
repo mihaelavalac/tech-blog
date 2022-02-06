@@ -12,29 +12,54 @@ body, html {
 }
 
 a {
+
   text-decoration: none;
   /* color: #225ca3; */
   font-weight: bold;
   transition: color .1s;
+  color: #a0dcff;;
 }
-
 a:hover {
-  color: #3486eb;
+  text-decoration: none;
+  color: #a0dcff;;
 }
 
-button {
-  background-color: #225ca3;
-  border: 0;
-  padding: 1%;
-  color: white;
+.log {
+  background-color: #a0dcff;
+  color: #333;
   font-weight: bold;
   transition: background-color .1s;
   cursor: pointer;
   border-radius: 5px;
 }
 
+.log:hover {
+  background-color: #a0dcff;
+  color: #333;
+}
+
+button {
+  background-color: #333;
+  border: 0;
+  padding: 1%;
+  color: white;
+  font-weight: bold;
+  transition: background-color .1s;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 button:hover {
-  background-color: #3486eb;
+  transform: scale(1.1); 
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1); 
 }
 
 .post-list {
@@ -50,11 +75,11 @@ textarea, input {
 
 textarea:focus, input:focus {
   outline: none;
-  border: 1px solid #3486eb;
+  border: 2px solid #333;
 }
 
 textarea {
-  min-width: 40%;
+  min-width: 100%;
   min-height: 100px;
 }
 .login-form {
@@ -110,7 +135,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: #a0dcff;;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -119,7 +144,7 @@ main {
 
 .btn-no-style:hover {
   background: none;
-  color: #3486eb;
+  color: #a0dcff;;
 }
 
 .delete-post-btn {
@@ -171,8 +196,9 @@ main {
   margin-bottom: 1%;
 }
 
-.comment:nth-child(odd) {
-  background-color: #fff5eb;
+.comment {
+  background-color: #333;
+  color: #a0dcff;
 }
 
 

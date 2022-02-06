@@ -1,17 +1,21 @@
-<article class="post p-2 bg-dark">
-      <div class="row">
+<a class="title" href="/post/{{id}}">
+  <article class="post p-2 bg-dark grow">
+    <div class="row">
 
-          <div class ="col-6 ">
-            <h4 class="text-left">
-            <a class="title" href="/post/{{id}}">{{title}}</a>
-            </h4>
-          </div>
-          <div class="meta col-6">
-            <p class="text-white text-right small">Posted by {{user.username}} on
-            {{created_at}}</p>
-          </div>
-          <div class="col-12">
-            <p class = "post-body ">{{post_body}}</p>
-          </div>
+      <div class="col-6">
+        <h4 class="text-left">
+          {{title}}
+        </h4>
       </div>
-    </article>
+      <div class="meta col-6">
+        <p class="text-white text-right small">Posted by
+          {{user.username}}
+          on
+          {{format_date created_at}}</p>
+      </div>
+      <div class="col-12">
+        <p class="post-body">{{post_body}}</p>
+      </div>
+    </div>
+  </article>
+</a>
