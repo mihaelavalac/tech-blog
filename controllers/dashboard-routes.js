@@ -85,5 +85,8 @@ const withAuth = require('../utils/auth');
       });
   });
 
+  router.get('/create-post', withAuth, (req, res) => {
+    res.render('create-post', { loggedIn: true });
+  })
 
 module.exports = router;
