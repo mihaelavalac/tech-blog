@@ -1,34 +1,40 @@
 
 {{#if posts.length}}
 <section>
-  <h2>Your Posts</h2>
+
+  <div class= "row">
+    <div class="col-9">   <h2>Your Posts</h2> </div>
+
+     <div class="text-center col-3">
+      <a  href="/dashboard/create-post" type="submit" class=" rounded p-2 bg-dark" style="width: 200px!important;" >Create New Post</a>
+    </div> 
+  </div>
+   
+
+
+    
+
   <ul class="post-list list-unstyled">
     {{#each posts as |post|}}
-    <li>
-      {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link text-dark" style="">Edit post</a>
-    </li>
+
+   
+       <li> <div class="row">
+      <div class="col-10">
+         {{> post-info post}} 
+      </div>
+        <div class="col-2 text-center">
+        <a href="/dashboard/edit/{{post.id}}" class="h4 p-3 mt-4  rounded edit-link text-white bg-danger" style=""> Edit post</a>
+      </div>
+      </div></li>
+
     {{/each}}
   </ul>
 </section>
 {{/if}}
 
-<section>
-  <h2>Create New Post</h2>
 
-  <form class="new-post-form">
-    <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
-    </div>
-    <div>
-      <label for="post-body">Content</label>
-      <textarea name="post-body" id="post-url" cols="30" rows="8"></textarea>
-    </div>
-    <div class="text-center"><button type="submit" class="p-2" style="width: 100% !important;" >Create</button></div>
     
-  </form>
-</section>
 
 
-<script src="/javascript/add-post.js"></script>
+
+
