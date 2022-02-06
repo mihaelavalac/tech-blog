@@ -1,38 +1,64 @@
-<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Tech Blog</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Tech Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
 
-<body>
-  <div class="wrapper">
-    <header>
-      <h1>
-        <a href="/">The Tech Blog</a>
-      </h1>
-       <nav>  {{#if loggedIn}}
-          <button id="logout" class="btn-no-style">logout</button>
-            {{else}}
-          <a href="/login">login</a>
-          {{/if}}
-    </nav>
+  <body>
+    <header class="p-2" style="background-color: #333;">
+      <div class="wrapper ">
+        <nav class="navbar navbar-expand-md ">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                  <h1>
+                    <a class="h2" href="/">The Tech Blog</a>
+                  </h1>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+
+                <ul class="navbar-nav ml-auto">
+                    {{#if loggedIn}}
+                    <li class="nav-item">
+                        <a href="/dashboard" class="log p-2 m-1">Dashboard</a>
+                     </li>
+                    <li class="nav-item">
+                          <a id="logout" class="log p-2 m-1">Logout</a>
+                    </li>
+                    {{else}}
+                    <li>
+                      <a href="/login" class="log p-2 bold">Login</a>
+                  {{/if}}
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      </div>
     </header>
-    <main>
-      {{{ body }}}
-    </main>
-    <footer>
-      Thanks for visiting!
-    </footer>
-  </div>
+
+    <div class="wrapper">
+      <main>
+        {{{body}}}
+      </main>
+      <footer>
+        Thanks for visiting!
+      </footer>
+    </div>
     {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
-  {{/if}}
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</body>
+      <script src="/javascript/logout.js"></script>
+    {{/if}}
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    ></script>
+  </body>
 
 </html>
