@@ -1,38 +1,46 @@
-<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Tech Blog</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Tech Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
 
-<body>
-  <div class="wrapper">
-    <header>
-      <h1>
-        <a href="/">The Tech Blog</a>
-      </h1>
-       <nav>  {{#if loggedIn}}
-          <button id="logout" class="btn-no-style">logout</button>
-            {{else}}
-          <a href="/login">login</a>
+  <body>
+    <header class="p-2" style="background-color: #333;">
+      <div class="wrapper justify-content-between">
+        <nav class="navbar justify-content-between">
+          <h1>
+            <a class="h2" href="/">The Tech Blog</a>
+          </h1>
+          {{#if loggedIn}}
+            <button id="logout" class="log p-2">logout</button>
+          {{else}}
+            <a href="/login" class="btn log p-2 bold">login</a>
           {{/if}}
-    </nav>
+        </nav>
+      </div>
     </header>
-    <main>
-      {{{ body }}}
-    </main>
-    <footer>
-      Thanks for visiting!
-    </footer>
-  </div>
+
+    <div class="wrapper">
+      <main>
+        {{{body}}}
+      </main>
+      <footer>
+        Thanks for visiting!
+      </footer>
+    </div>
     {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
-  {{/if}}
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</body>
+      <script src="/javascript/logout.js"></script>
+    {{/if}}
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    ></script>
+  </body>
 
 </html>
