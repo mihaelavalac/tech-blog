@@ -94,12 +94,27 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   width: 500px;
+  color:#a0dcff;
+  background-color: #333;
+  border-radius: 2%;
+  padding: 20px;
 }
+
+
 .signup-form {
   margin-top: 15%;
   margin-left: auto;
   margin-right: auto;
   width: 500px;
+  color:#a0dcff;
+  background-color: #333;
+  border-radius: 2%;
+  padding: 20px;
+}
+
+.submit-login {
+  background-color: #a0dcff;
+  color:#333;
 }
 
 form > div {
