@@ -31,6 +31,7 @@ router.delete("/:id", withAuth, (req, res) => {
     where: {
       id: req.params.id,
     },
+   
   })
     .then((dbCommentData) => {
       if (!dbCommentData) {
