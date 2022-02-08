@@ -1,23 +1,16 @@
-
-{{#if posts.length}}
 <section>
-
   <div class= "row">
     <div class="col-9">   <h2>Your Posts</h2> </div>
-
      <div class="text-center col-3">
       <a  href="/dashboard/create-post" type="submit" class=" rounded p-2 bg-dark" style="width: 200px!important;" >Create New Post</a>
     </div> 
   </div>
-   
+  </section>
 
-
-    
-
+{{#if posts.length}}
+  <section>
   <ul class="post-list list-unstyled">
-    {{#each posts as |post|}}
-
-   
+    {{#each posts as |post|}} 
        <li> <div class="row">
       <div class="col-10">
          {{> post-info post}} 
